@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "Lato", sans-serif;
+        src: url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Lato, Verdana, sans-serif;
+    font-size: 10px;
+    max-width: 1020px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.header {
+    height: 89px;
+    background: #2D303A;
+    font-size: 2.5rem;
+    display: flex;
+    border-bottom-width: 6px;
+    border-bottom-color: #323746;
+    border-bottom-style: solid;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 29px 0 0 40px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    width: 124px;
+    height: 25px;
+    text-transform: uppercase;
+}
+
+.star {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.header-link-menu {
+    width: 375px;
+    height: 14px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-links {
+    display: inline-block;
+    margin-top: 42px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    color: #FFFFFF;
+    position: relative;
+    text-decoration: none;
+}
+
+.navigation-links:hover {
+    cursor: pointer;
+}
+
+.navigation-links:first-child {
+    color: #F06C64;
+}
+
+.navigation-links::after {
+    content: "\2B24";
+    font-size: 0.4rem;
+    color: #FFFFFF;
+    margin-left: 16px;
+    position: absolute;
+    padding-top: 5px;
+}
+
+.navigation-links:last-child::after {
+    content: none;
+}
+
+.navigation-links:hover {
+    color: #F06C64;
+    transition: 0.3s;
+}
+
+.main-screen {
+    background-color: #F06C64;
+    height: 594px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: 6px;
+    border-bottom-color:#EA676B;
+    border-bottom-style: solid;
+}
+
+.arrow {
+    height: 27px;
+    width: 16px;
+    flex-grow: 1;
+}
+
+.left-arrow {
+    padding: 283px 55.5px 0 40px;
+}
+
+.right-arrow {
+    padding: 283px 40px 0 0;
+}
+
+.completely-vertical {
+    flex-grow: 2;
+    padding-top: 54px;
+}
+
+.shadow-vertical {
+    position: absolute;
+    width: 240px;
+}
+
+.phone-vertical {
+    position: absolute;
+    width: 216px;
+}
+
+.display-vertical {
+    position: absolute;
+    padding-top: 65px;
+    padding-left: 14px;
+}
+
+.completly-horizontal {
+    padding-top: 176.5px;
+    padding-right: 81px;
+    position: relative;
+    flex-grow: 3;
+}
+
+.phone-horizontal {
+    width: 458px;
+    position: absolute;
+}
+
+.display-horizontal {
+    position: absolute;
+    padding: 14px 0px 0px 60px;
+}
+
+.shadow-horizontal {
+    position: absolute;
+}
+
+.service-menu {
+    background-color: #F2F2F2;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-bottom: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: #ffffff;
+}
+
+h2 {
+    padding-top: 59px;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 36px;
+    color: #666D89;
+}
+
+.service-description {
+    padding-top: 18px;
+    padding-right: 4px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: left;
+    color: #767E9E;
+}
+
+.layer-3-column {
+    padding: 60px 0 26px 0px;
+}
+
+.our-services-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-block {
+    width: 300px;
+    display: flex;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.service-text {
+    padding: 0 20px;
+}
+
+.service-text-link {
+    text-decoration: none;
+    color: #666D89
+}
+
+.service-text-link:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    color: #666D89;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.8rem;
+    padding-bottom: 7px;
+}
+
+.about-service {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #666D89;
+}
+
+.portfolio {
+    background-color: #2D303A;
+    padding-bottom: 48px;
+}
+
+.portfolio-text {
+    margin-left: 40px;
+}
+
+.portfolio-description {
+    margin: 13.87px 44px 35.18px 40px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: #767E9E;
+}
+
+.tag-field {
+    margin-left: 40px;
+    width: 290px;
+    height: 22px;
+}
+
+.tag {
+    color: #767E9E;
+    border: 1px solid #767E9E;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 4px 3px 6px 3px;
+    text-align: center;
+}
+
+.tag-active {
+    color: #DEDEDE;
+    border: 1px solid #BBBBBB;
+}
+
+.tag-links {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.portfolio-boxes {
+    margin: 18px 40px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.portfolio-photo {
+    width: 220px;
+    height: 187px;
+    margin-bottom: 20px;
+}
+
+.portfolio-photo:nth-child(n+13) {
+    display: none;
+}
+
+footer {
+    height: 76px;
+    background: #2D303A;
+    border-top: solid;
+    border-top-color: #323746;
+    border-top-width: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin-left: 40px;
+    margin-top: 30px;
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: #666D89;
+}
+
+.social {
+    margin-top: 22px;
+    padding-right: 42px;
+}
+
+.social-button {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.social-button:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 1020px) {     /*почему меняется на 1020, а когда меняешь на 1019, то начинается с 1019*/
+    .phone-vertical {
+        width: 162.36px;  /*почему-то высотой элемента не делается*/
+    }
+
+    .phone-horizontal {
+        width: 344.26px;
+    }
+
+    .shadow-vertical {
+        width: 180.71px;
+    }
+
+    .display-vertical {
+        width: 141.55px;
+        padding: 49px 0px 0px 10px;
+    }
+
+    .phone-horizontal {
+        width: 344.26px;
+        position: absolute;
+    }
+    
+    .shadow-horizontal {
+        width: 363.67px;
+    }
+    
+    .display-horizontal {
+        width: 250.73px;
+        padding: 10px 0px 0px 46px;
+    }
+
+    .service-block {
+        width: 45%;
+    }
+
+    .portfolio-boxes {
+      justify-content: space-between;
+    }
+
+    .portfolio-photo {
+        width: 216.19px;
+        height: 183.76px;
+        margin-bottom: 19.65px;
+        padding-bottom: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 71px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .logo {
+        padding-top: 24px;
+        font-weight: bold;
+        width: 92px;
+        height: 2.4rem;
+        margin-right: 135px;
+    }
+    
+    .star {
+        color: red;
+        font-size: 2.4rem;
+    }
+    
+    .navigation {
+        background-image: url(/img/Burger-menu-icon.svg);
+        width: 25px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 26px;
+        cursor: pointer;
+    }
+
+    .header-link-menu {
+        display: none;
+    }
+    
+    .main-screen {
+        height: 218.38px;
+        border-bottom-width: 2.21px;
+    }
+    
+    .arrow {
+        height: 24.9px;
+        width: 14.08px;
+        flex-grow: 1;
+    }
+    
+    .left-arrow {
+        padding: 98.26px 22px 95.03px 10.25px;
+    }
+    
+    .right-arrow {
+        padding-top: 98.26px;
+        padding-right: 9.64px;
+    }
+
+    .completely-vertical {
+        flex-grow: 2;
+        padding-top: 20.01px;
+    }
+
+    .phone-vertical {
+        width: 79.28px; 
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+    }
+
+    .shadow-vertical {
+        width: 88.24px;
+    }
+
+    .display-vertical {
+        width: 69.12px;
+        padding: 24px 0px 0px 5px;
+    }
+
+    .completly-horizontal {
+        padding-top: 64.97px;
+        padding-left: 26.57px;
+    }
+
+    .phone-horizontal {
+        width: 168.1px;
+        position: absolute;
+    }
+    
+    .shadow-horizontal {
+        width: 177.57px;
+    }
+    
+    .display-horizontal {
+        width: 122.43px;
+        padding: 5px 0px 0px 22px;
+    }
+
+    .service-block {       
+        width: 51%;
+    }
+
+    h2 {
+        padding-top: 25.6px;
+    }
+
+    .portfolio-boxes {
+        margin: 25px 30px 0px 30px;
+        height: 844px;
+    }
+
+    .tag-field {
+        margin-left: 30px;
+    }
+    
+    .portfolio-photo {
+        width: 151px;
+        height: 128px;
+        width: 50%;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio-photo {
+        width: 46%;
+        margin-bottom: 0px;
+    }
+
+    .portfolio-boxes {
+        height: auto;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .copyright {
+       display: none;
+    }
+
+    .social {
+        padding-right: 0px;
+    }
+}
