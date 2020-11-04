@@ -260,6 +260,10 @@ h3 {
     text-align: center;
 }
 
+.tag:hover {
+    color: #DEDEDE;
+}
+
 .tag-active {
     color: #DEDEDE;
     border: 1px solid #BBBBBB;
@@ -322,9 +326,9 @@ footer {
     margin-right: 0px;
 }
 
-@media (max-width: 1020px) {     /*почему меняется на 1020, а когда меняешь на 1019, то начинается с 1019*/
+@media (max-width: 1019px) {   
     .phone-vertical {
-        width: 162.36px;  /*почему-то высотой элемента не делается*/
+        width: 162.36px; 
     }
 
     .phone-horizontal {
@@ -358,8 +362,13 @@ footer {
         width: 45%;
     }
 
+    .portfolio {
+        padding-bottom: 45.4px;
+    }
+
     .portfolio-boxes {
       justify-content: space-between;
+      margin: 28px 41.13px 0px 39px;
     }
 
     .portfolio-photo {
@@ -371,7 +380,7 @@ footer {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     .header {
         height: 71px;
@@ -476,7 +485,10 @@ footer {
 
     .portfolio-boxes {
         margin: 25px 30px 0px 30px;
-        height: 844px;
+    }
+
+    .portfolio-photo:nth-child(n+9) {
+        display: none;
     }
 
     .tag-field {
@@ -486,19 +498,8 @@ footer {
     .portfolio-photo {
         width: 151px;
         height: 128px;
-        width: 50%;
+        width: 47%;
         margin-bottom: 14px;
-    }
-}
-
-@media (max-width: 375px) {
-    .portfolio-photo {
-        width: 46%;
-        margin-bottom: 0px;
-    }
-
-    .portfolio-boxes {
-        height: auto;
     }
 
     footer {
@@ -512,5 +513,21 @@ footer {
 
     .social {
         padding-right: 0px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio-photo {
+        width: 46%;
+        margin-bottom: 0px;
+    }
+
+    .portfolio-boxes {
+        height: auto;
+            /* height: 844px;
+    }
+
+    .portfolio-photo:nth-child(n+9) {
+        display: none;
     }
 }
