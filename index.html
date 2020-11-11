@@ -14,12 +14,13 @@
         <div class="header">
             <h1 class="logo">singolo<span class="star">*</span></h1>
             <nav class="navigation">
+                <div class="burger-icon"></div>
                 <div class="header-link-menu">
-                    <a class="navigation-links" href="#"><span>HOME</span></a>
-                    <a class="navigation-links" href="#"><span>SERVICES</span></a>
-                    <a class="navigation-links" href="#"><span>PORTFOLIO</span></a>
-                    <a class="navigation-links" href="#"><span>ABOUT</span></a>
-                    <a class="navigation-links" href="#"><span>CONTACT</span></a>
+                    <a class="navigation-links" href="#home"><span class="link">HOME</span></a>
+                    <a class="navigation-links" href="#services"><spanv class="link">SERVICES</spanv></a>
+                    <a class="navigation-links" href="#portfolio"><span class="link">PORTFOLIO</span></a>
+                    <a class="navigation-links" href="#about"><span class="link">ABOUT</span></a>
+                    <a class="navigation-links" href="#contact"><span class="link">CONTACT</span></a>
                 </div>
             </nav>
         </div>
@@ -48,7 +49,7 @@
         </section>
         
 
-        <section class="service-menu">
+        <section class="service-menu" id="services">
             <h2>Our Services</h2>
             <p class="service-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                 mollis,
@@ -127,7 +128,7 @@
             </div>
         </section>
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2 class="portfolio-text">Portfolio</h2>
             <p class="portfolio-description">Duis mollis, est non commodo luctus,
                 nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -155,13 +156,11 @@
 
             </div>
         </section>
-
-        <div class="last-border"></div>
     </main>
 
 
     <footer>
-        <span class="copyright">© Copyright 2013</span>
+        <span class="copyright" id="contact">© Copyright 2013</span>
         <div class="social">
             <a href="#" class="social-button"><span><img src="/img/ico-facebook.svg" alt="facebook"></span></a>
             <a href="#" class="social-button"><span><img src="/img/ico-google-plus.svg" alt="google plus"></span></a>
@@ -169,6 +168,8 @@
             <a href="#" class="social-button"><span><img src="/img/ico-linkedin.svg" alt="linkedin"></span></a>
         </div>
     </footer>
+<script src="/index.js"></script>
+
 </body>
 
 </html>
