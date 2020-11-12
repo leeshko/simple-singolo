@@ -17,86 +17,74 @@ html {
 }
 
 h1 {
-    font-size: 2.5rem;
-}
-
-.header {
-    height: 89px;
-    background: #2D303A;
-    font-size: 2.5rem;
-    display: flex;
-    border-bottom-width: 6px;
-    border-bottom-color: #323746;
-    border-bottom-style: solid;
-    justify-content: space-between;
-}
-
-.logo {
-    padding: 29px 0 0 40px;
+    font-size: 2.5rem;              /*You have font-size on h1 and on navigation-links. Do you really need font-size here?*/
+    padding: 29px 0 0 40px;         /*is it a good practice to set all properties of block to h1 tag*/
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.03em;
     color: #FFFFFF;
-    width: 124px;
-    height: 25px;
     text-transform: uppercase;
+}
+
+header {
+    height: 89px;
+    background: #2D303A;
+    font-size: 2.5rem;
+    display: flex;
+    border-bottom: 6px solid #323746;
+    justify-content: space-between;
 }
 
 .star {
     color: red;
-    font-size: 2.5rem;
 }
 
 .header-link-menu {
-    width: 375px;
-    height: 14px;
     padding-right: 40px;
-    display: flex;
-    justify-content: space-between;
+    display: inline;  /*Flex is not required here also. You can implement it using inline mode*/
+    justify-content: space-between;     /*It will be changed by padding. Please remove this one...... Don`t understand*/
 }
 
 .burger-icon {
     display: none;
 }
 
-.navigation-links {
+.header-link-menu a {
     display: inline-block;
     margin-top: 42px;
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: -0.035em;
     color: #FFFFFF;
-    position: relative;
-    text-decoration: none;
+    position: relative;     /*You can remove this position relative and implement .navigation-links::after with position relative instead of absolute.*/
+    text-decoration: none;  /*while doing this my rounds between links go to the bottom*/
+    padding: 0 15px 0 15px;
 }
 
-.navigation-links:hover {
-    cursor: pointer;
-}
-
-.navigation-links:first-child {
+.header-link-menu a.selected {
     color: #F06C64;
 }
 
-.navigation-links::after {
+.header-link-menu a::after {
     content: "\2B24";
     font-size: 0.4rem;
     color: #FFFFFF;
-    margin-left: 16px;
-    position: absolute;
-    padding-top: 5px;
+    margin-left: 13px;
+    position: absolute; 
+    padding: 5px 0 0 0;
 }
 
-.navigation-links:last-child::after {
+.header-link-menu a:last-child::after {
     content: none;
 }
 
-.navigation-links:hover {
+.header-link-menu a:hover {
     color: #F06C64;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-.main-screen {
+.slider {
     background-color: #F06C64;
     height: 594px;
     display: flex;
@@ -112,7 +100,7 @@ h1 {
     
 }
 
-.main-screen .slide2 {
+.slider.slide2 {
     display: none;
     
 } 
@@ -121,6 +109,22 @@ h1 {
     height: 27px;
     width: 16px;
     flex-grow: 1;
+}
+
+.left {
+    display: block;
+    width: 16px;
+    height: 27px;
+    background-image: url(/img/arrow-left.svg);
+    margin: 283px 55.5px 284px 40px;
+}
+
+.right {
+    display: block;
+    width: 16px;
+    height: 27px;
+    background-image: url(/img/arrow-right.svg);
+    margin: 283px 40px 284px;
 }
 
 .left-arrow {
@@ -445,7 +449,7 @@ footer {
         transition-duration: 0.7s;
     }
 
-    .navigation-links {
+    .header-link-menu a {
         display: block;
         margin-top: 0;
         font-size: 24px;
@@ -458,10 +462,10 @@ footer {
     display: none;
     } */
 
-    .navigation-links::after {
+    .header-link-menu a::after {
         display: none;
     }
-    .main-screen {
+    .slider {
         height: 218.38px;
         border-bottom-width: 2.21px;
     }
