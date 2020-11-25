@@ -16,9 +16,13 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    border-bottom: 6px solid;
+}
+
 h1 {
-    font-size: 2.5rem;              /*You have font-size on h1 and on navigation-links. Do you really need font-size here?*/
-    padding: 29px 0 0 40px;         /*is it a good practice to set all properties of block to h1 tag*/
+    font-size: 2.5rem;
+    padding: 29px 0 0 40px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.03em;
@@ -29,7 +33,6 @@ h1 {
 header {
     height: 89px;
     background: #2D303A;
-    font-size: 2.5rem;
     display: flex;
     border-bottom: 6px solid #323746;
     justify-content: space-between;
@@ -41,8 +44,7 @@ header {
 
 .header-link-menu {
     padding-right: 40px;
-    display: inline;  /*Flex is not required here also. You can implement it using inline mode*/
-    justify-content: space-between;     /*It will be changed by padding. Please remove this one...... Don`t understand*/
+    display: inline;
 }
 
 .burger-icon {
@@ -56,9 +58,8 @@ header {
     font-weight: bold;
     letter-spacing: -0.035em;
     color: #FFFFFF;
-    position: relative;     /*You can remove this position relative and implement .navigation-links::after with position relative instead of absolute.*/
-    text-decoration: none;  /*while doing this my rounds between links go to the bottom*/
-    padding: 0 15px 0 15px;
+    text-decoration: none;
+    padding-left: 10px;
 }
 
 .header-link-menu a.selected {
@@ -70,8 +71,8 @@ header {
     font-size: 0.4rem;
     color: #FFFFFF;
     margin-left: 13px;
-    position: absolute; 
-    padding: 5px 0 0 0;
+    position: relative;
+    bottom: 2px;
 }
 
 .header-link-menu a:last-child::after {
@@ -86,36 +87,32 @@ header {
 
 .slider {
     background-color: #F06C64;
-    height: 594px;
     display: flex;
     justify-content: space-between;
-    border-bottom-width: 6px;
-    border-bottom-color: #EA676B;
-    border-bottom-style: solid;
+    border-color: #EA676B;
+    bord
 }
 
 .slide2 {
-    background-image: url(/img/Slide-2.svg);
-    height: 594px;
-    
+    background-image: url(../img/Slide-2.svg);
+    /* height: 594px; */
 }
 
 .slider.slide2 {
     display: none;
-    
-} 
+}
 
-.arrow {
+/* .arrow {
     height: 27px;
     width: 16px;
     flex-grow: 1;
-}
+} */
 
 .left {
     display: block;
     width: 16px;
     height: 27px;
-    background-image: url(/img/arrow-left.svg);
+    background-image: url(../img/arrow-left.svg);
     margin: 283px 55.5px 284px 40px;
 }
 
@@ -123,17 +120,17 @@ header {
     display: block;
     width: 16px;
     height: 27px;
-    background-image: url(/img/arrow-right.svg);
+    background-image: url(../img/arrow-right.svg);
     margin: 283px 40px 284px;
 }
 
-.left-arrow {
+/* .left-arrow {
     padding: 283px 55.5px 0 40px;
 }
 
 .right-arrow {
     padding: 283px 40px 0 0;
-}
+} */
 
 .completely-vertical {
     flex-grow: 2;
@@ -148,6 +145,7 @@ header {
 .phone-vertical {
     position: absolute;
     width: 216px;
+    padding-bottom: 82px;
 }
 
 .display-vertical {
@@ -181,9 +179,7 @@ header {
     background-color: #F2F2F2;
     padding-left: 40px;
     padding-right: 40px;
-    border-bottom: solid;
-    border-bottom-width: 6px;
-    border-bottom-color: #ffffff;
+    border-color: #ffffff;
 }
 
 h2 {
@@ -251,6 +247,7 @@ h3 {
 .portfolio {
     background-color: #2D303A;
     padding-bottom: 48px;
+    border-color: #323746;
 }
 
 .portfolio-text {
@@ -267,8 +264,6 @@ h3 {
 
 .tag-field {
     margin-left: 40px;
-    width: 290px;
-    height: 22px;
 }
 
 .tag {
@@ -303,9 +298,13 @@ h3 {
 }
 
 .portfolio-photo {
-    width: 220px;
-    height: 187px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    width: 23%;
+}
+
+.portfolio-photo:nth-child(4n) {
+    padding-right: 0px;
 }
 
 .portfolio-photo:nth-child(n+13) {
@@ -315,9 +314,6 @@ h3 {
 footer {
     height: 76px;
     background: #2D303A;
-    border-top: solid;
-    border-top-color: #323746;
-    border-top-width: 6px;
     display: flex;
     justify-content: space-between;
 }
@@ -347,8 +343,19 @@ footer {
 }
 
 @media (max-width: 1019px) {
+    .slider {
+        height: 447px;
+    }
+    .left {
+        margin-top: 211.88px;
+        margin-left: 29.42px;
+    }
+    .right {
+        margin: 211.88px 26.86px 207.05px;
+    }
     .phone-vertical {
         width: 162.36px;
+        padding-bottom: 62px;
     }
     .phone-horizontal {
         width: 344.26px;
@@ -381,23 +388,23 @@ footer {
         padding-bottom: 45.4px;
     }
     .portfolio-boxes {
-        justify-content: space-between;
         margin: 28px 41.13px 0px 39px;
     }
     .portfolio-photo {
-        width: 216.19px;
-        height: 183.76px;
-        margin-bottom: 19.65px;
-        padding-bottom: 0;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        width: 31%;
+    }
+    .portfolio-photo:nth-child(4n) {
+        padding-right: 15px;
+    }
+    .portfolio-photo:nth-child(3n) {
+        padding-right: 0px;
     }
 }
 
 @media (max-width: 767px) {
-    .header {
-        height: 71px;
-        display: flex;
-        flex-direction: row-reverse;
-    }
+
     .logo {
         padding-top: 24px;
         font-weight: bold;
@@ -406,17 +413,18 @@ footer {
         margin-right: 135px;
         z-index: 100;
     }
+
     .star {
         color: red;
         font-size: 2.4rem;
     }
     .burger-icon {
         display: block;
-        background-image: url(/img/Burger-menu-icon.svg);
+        background-image: url(../img/Burger-menu-icon.svg);
         width: 25px;
         height: 20px;
         position: absolute;
-        margin-left: 20px;
+        padding-left: 20px;
         margin-top: 26px;
         cursor: pointer;
         transition: ease-in-out 0.2s;
@@ -441,14 +449,12 @@ footer {
         padding-right: 0;
         z-index: 1;
     }
-
     .open+.header-link-menu {
         display: block;
         width: 278px;
         height: 812px;
         transition-duration: 0.7s;
     }
-
     .header-link-menu a {
         display: block;
         margin-top: 0;
@@ -461,29 +467,22 @@ footer {
     /* .open + .navigation-links {
     display: none;
     } */
-
     .header-link-menu a::after {
         display: none;
     }
     .slider {
-        height: 218.38px;
+        height: 218px;
         border-bottom-width: 2.21px;
     }
     .opacityBackground {
         opacity: 0.6;
         background: #2D303A;
     }
-    .arrow {
-        height: 24.9px;
-        width: 14.08px;
-        flex-grow: 1;
+    .left {
+        margin: 98.45px 10px 95.03px 10.25px;
     }
-    .left-arrow {
-        padding: 98.26px 22px 95.03px 10.25px;
-    }
-    .right-arrow {
-        padding-top: 98.26px;
-        padding-right: 9.64px;
+    .right {
+        margin: 98.45px 9.64px;
     }
     .completely-vertical {
         flex-grow: 2;
@@ -532,11 +531,15 @@ footer {
     .tag-field {
         margin-left: 30px;
     }
+    .portfolio-photo:nth-child(3n) {
+        padding-right: 0px;
+    }
     .portfolio-photo {
-        width: 151px;
-        height: 128px;
+        padding: 0px 15px 15px 0px;
         width: 47%;
-        margin-bottom: 14px;
+    }
+    .portfolio-photo:nth-child(2n) {
+        padding-right: 0px;
     }
     footer {
         display: flex;
@@ -552,7 +555,7 @@ footer {
 
 @media (max-width: 375px) {
     .portfolio-photo {
-        width: 46%;
+        width: 47%;
         margin-bottom: 0px;
     }
 }
