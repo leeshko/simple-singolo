@@ -1,21 +1,25 @@
-const elem = document.querySelector('.burger-icon');
+const burger = document.querySelector('.burger-icon');
 const opacityBackground = document.querySelector('main');
-const clickLink = document.querySelectorAll('.navigation-links');
+const clickLink = document.querySelectorAll('.link');
 const leftArrow = document.querySelector('.left-arrow');
-const mainScreen = document.querySelector('.main-screen');
 
 
+burger.addEventListener( "click" , () => {
+    burger.classList.toggle('open');
+    opacityBackground.classList.toggle('opacityBackground');
+});
 
-elem.addEventListener( "click" , () => elem.classList.toggle('open'));
+clickLink.forEach(link => { 
+    link.addEventListener("click",function (e) {
+        burger.classList.remove('open');
+        opacityBackground.classList.remove('opacityBackground');
+        activeLink(e.target.innerHTML); //difficulties
+    });
+});
 
-elem.addEventListener( "click" , () => opacityBackground.classList.toggle('opacityBackground'));
-
-//clickLink.addEventListener.forEach( "click" , () => elem.classList.remove('open'));
-
-//clickLink.addEventListener( "click" , () => opacityBackground.classList.remove('opacityBackground'));
-
-leftArrow.addEventListener( "click" , () => mainScreen.classList.toggle('slide2'));
-
-
+opacityBackground.addEventListener('click' , () => {
+    burger.classList.remove('open');
+    opacityBackground.classList.remove('opacityBackground');
+});
 
 
