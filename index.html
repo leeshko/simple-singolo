@@ -11,50 +11,55 @@
 
 <body>
     <header>
-        <h1 class="logo">singolo<span class="star">*</span></h1>
-        <nav class="navigation">
-            <div class="burger-icon"></div>
-            <div class="header-link-menu">
-                <a class="link selected" href="#home">HOME</a>
-                <a class="link" href="#services">SERVICES</a>
-                <a class="link" href="#portfolio">PORTFOLIO</a>
-                <a class="link" href="#about">ABOUT</a>
-                <a class="link" href="#contact">CONTACT</a>
-            </div>
-        </nav>
+        <div class="flex-wrapper">
+            <h1 class="logo">singolo<span class="star">*</span></h1>
+            <nav class="navigation">
+                <div class="burger-icon"></div>
+                <div class="header-link-menu">
+                    <a class="link selected" href="#home">HOME</a>
+                    <a class="link" href="#services">SERVICES</a>
+                    <a class="link" href="#portfolio">PORTFOLIO</a>
+                    <a class="link" href="#about">ABOUT</a>
+                    <a class="link" href="#contact">CONTACT</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="slider">
+            <div class="flex-wrapper">
 
-            <div>
-                <a href="#" class="arrow left"></a>
+                <div>
+                    <a href="#" class="arrow left"></a>
+                </div>
+                <div class="completely-vertical">
+                    <img class="shadow-vertical" src="./img/phone-vertical-shadow.svg" alt="vertical shadow">
+                    <img class="phone-vertical" src="./img/phone-vertical.svg" alt="vertical-phone">
+                    <img class="display-vertical" src="./img/phone-vertical-display.svg" alt="vertical display">
+                </div>
+                <div class="completly-horizontal">
+                    <img src="./img/phone-horizontal-shadow.svg" alt="horizontal shadow" class="shadow-horizontal">
+                    <img class="phone-horizontal" src="./img/phone-horizontal.svg" alt="horizontal-phone">
+                    <img class="display-horizontal" src="./img/phone-horizontal-display.svg" alt="horizontal display">
+                </div>
+                <div>
+                    <a href="#" class="arrow right"></a>
+                </div>
             </div>
-            <div class="completely-vertical">
-                <img class="shadow-vertical" src="./img/phone-vertical-shadow.svg" alt="vertical shadow">
-                <img class="phone-vertical" src="./img/phone-vertical.svg" alt="vertical-phone">
-                <img class="display-vertical" src="./img/phone-vertical-display.svg" alt="vertical display">
-            </div>
-            <div class="completly-horizontal">
-                <img src="./img/phone-horizontal-shadow.svg" alt="horizontal shadow" class="shadow-horizontal">
-                <img class="phone-horizontal" src="./img/phone-horizontal.svg" alt="horizontal-phone">
-                <img class="display-horizontal" src="./img/phone-horizontal-display.svg" alt="horizontal display">
-            </div>
-            <div>
-                <a href="#" class="arrow right"></a>
-            </div>
-
         </section>
 
 
         <section class="service-menu" id="services">
-            <h2>Our Services</h2>
-            <p class="section-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
-                mollis,
-                non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus
-                ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="wrapper">
+                <h2>Our Services</h2>
+                <p class="section-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
+                    mollis,
+                    non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus,
+                    tellus
+                    ac cursus commodo, tortor mauris condimentum nibh.</p>
 
-            <div class="layer-3-column">
+                <div class="layer-3-column">
                     <div class="service-block">
                         <div class="service-logo">
                             <img src="./img/services-item-1.svg" alt="Custom Design">
@@ -121,47 +126,52 @@
                                 Fusce vitae aliquam tellus.</p>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2>Portfolio</h2>
-            <p class="section-description portfolio-text">Duis mollis, est non commodo luctus,
-                nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <div>
-                <a class="tag-links tag-active" href="#" >All</a>
-                <a class="tag-links" href="#" >Web Disign</a>
-                <a class="tag-links" href="#" >Graphic Design</a>
-                <a class="tag-links" href="#" >Artwork</a>
-            </div>
+            <div class="wrapper">
+                <h2>Portfolio</h2>
+                <p class="section-description portfolio-text">Duis mollis, est non commodo luctus,
+                    nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                <div>
+                    <a class="tag-links tag-active" href="#">All</a>
+                    <a class="tag-links" href="#">Web Disign</a>
+                    <a class="tag-links" href="#">Graphic Design</a>
+                    <a class="tag-links" href="#">Artwork</a>
+                </div>
 
-            <div class="portfolio-boxes">
-                <img src="./img/portfolio/portfolio-1.svg" alt="photo 1" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-2.svg" alt="photo 2" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-3.svg" alt="photo 3" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-4.svg" alt="photo 4" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-5.svg" alt="photo 5" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-6.svg" alt="photo 6" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-7.svg" alt="photo 7" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-8.svg" alt="photo 8" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-9.svg" alt="photo 9" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-10.svg" alt="photo 10" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-11.svg" alt="photo 11" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-12.svg" alt="photo 12" class="portfolio-photo">
-                <img src="./img/portfolio/portfolio-1.svg" alt="photo 1" class="portfolio-photo">
+                <div class="portfolio-boxes">
+                    <img src="./img/portfolio/portfolio-1.svg" alt="photo 1" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-2.svg" alt="photo 2" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-3.svg" alt="photo 3" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-4.svg" alt="photo 4" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-5.svg" alt="photo 5" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-6.svg" alt="photo 6" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-7.svg" alt="photo 7" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-8.svg" alt="photo 8" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-9.svg" alt="photo 9" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-10.svg" alt="photo 10" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-11.svg" alt="photo 11" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-12.svg" alt="photo 12" class="portfolio-photo">
+                    <img src="./img/portfolio/portfolio-1.svg" alt="photo 1" class="portfolio-photo">
 
+                </div>
             </div>
         </section>
     </main>
 
 
     <footer id="contact">
-        <span class="copyright" id="contact">© Copyright 2013</span>
-        <div class="social">
-            <a href="#" class="social-button"><img src="./img/ico-facebook.svg" alt="facebook"></a>
-            <a href="#" class="social-button"><img src="./img/ico-google-plus.svg" alt="google plus"></a>
-            <a href="#" class="social-button"><img src="./img/ico-twitter.svg" alt="twitter"></a>
-            <a href="#" class="social-button"><img src="./img/ico-linkedin.svg" alt="linkedin"></a>
+        <div class="flex-wrapper">
+            <span class="copyright" id="contact">© Copyright 2013</span>
+            <div class="social">
+                <a href="#" class="social-button facebook"></a>
+                <a href="#" class="social-button google"></a>
+                <a href="#" class="social-button twitter"></a>
+                <a href="#" class="social-button linkedin"></a>
+            </div>
         </div>
     </footer>
     <script src="./index.js"></script>

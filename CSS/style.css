@@ -11,9 +11,14 @@
 html {
     font-family: Lato, Verdana, sans-serif;
     font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.flex-wrapper {
     max-width: 1020px;
     margin: auto;
-    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
 }
 
 section {
@@ -34,9 +39,7 @@ h1 {
 header {
     height: 89px;
     background: #2D303A;
-    display: flex;
     border-bottom: 6px solid #323746;
-    justify-content: space-between;
 }
 
 .star {
@@ -88,8 +91,6 @@ header {
 
 .slider {
     background-color: #F06C64;
-    display: flex;
-    justify-content: space-between;
     border-color: #EA676B;
 }
 
@@ -109,18 +110,26 @@ header {
     flex-grow: 1;
 }
 
-.arrow:hover {
-    
-}
-
 .left {
     background-image: url(../img/arrow-left.svg);
     margin: 283px 55.5px 284px 40px;
+    transition: 0.3s;
 }
 
 .right {
     background-image: url(../img/arrow-right.svg);
     margin: 283px 40px 284px;
+    transition: 0.3s;
+}
+
+.left:hover {
+    background-image: url(../img/arrow-left-hover.svg);
+    transition: 0.3s;
+}
+
+.right:hover {
+    background-image: url(../img/arrow-right-hover.svg);
+    transition: 0.3s;
 }
 
 .completely-vertical {
@@ -169,6 +178,11 @@ header {
 .service-menu {
     background-color: #F2F2F2;
     border-color: #ffffff;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: auto;
 }
 
 h2 {
@@ -278,12 +292,9 @@ h3 {
 footer {
     height: 76px;
     background: #2D303A;
-    display: flex;
-    justify-content: space-between;
 }
 
 .copyright {
-    margin-left: 40px;
     margin-top: 30px;
     font-weight: 900;
     font-size: 1.3rem;
@@ -293,23 +304,53 @@ footer {
 
 .social {
     margin-top: 22px;
-    padding-right: 42px;
 }
 
 .social-button {
+    display: inline-block;
     margin-right: 8px;
     width: 32px;
     height: 32px;
-    /* fill: #ff0000 !important; */
+    transition: 0.3s;
 }
-
-/* .path {
-    fill: #ff0000 !important;
-} */
 
 .social-button:hover {
     display: inline-block;
-   box-shadow: #F06C64 80px;
+    width: 32px;
+    height: 32px;
+    transition: 0.3s;
+}
+
+.facebook {
+    background-image: url(../img/ico-facebook.svg);
+}
+
+.facebook:hover {
+    background-image: url(../img/ico-facebook-hover.svg);
+}
+
+.google {
+    background-image: url(../img/ico-google-plus.svg);
+}
+
+.google:hover {
+    background-image: url(../img/ico-google-plus-hover.svg);
+}
+
+.twitter {
+    background-image: url(../img/ico-twitter.svg);
+}
+
+.twitter:hover {
+    background-image: url(../img/ico-twitter-hover.svg);
+}
+
+.linkedin {
+    background-image: url(../img/ico-linkedin.svg);
+}
+
+.linkedin:hover {
+    background-image: url(../img/ico-linkedin-hover.svg);
 }
 
 .social-button:last-child {
@@ -361,7 +402,6 @@ footer {
     .portfolio {
         padding-bottom: 45.4px;
     }
- 
     .portfolio-photo {
         padding-bottom: 15px;
         padding-right: 15px;
@@ -369,20 +409,18 @@ footer {
     }
 }
 
-@media (max-width: 767px) {         /*333*/
-
+@media (max-width: 767px) {
+    /*333*/
     header {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-
     .logo {
         padding-top: 24px;
         font-weight: bold;
         margin-left: 30vw;
         z-index: 100;
     }
-
     .star {
         color: red;
         font-size: 2.4rem;
@@ -432,7 +470,6 @@ footer {
         padding-bottom: 27px;
         padding-left: 71px;
     }
-   
     .header-link-menu a::after {
         display: none;
     }
@@ -488,14 +525,12 @@ footer {
     h2 {
         padding-top: 25.6px;
     }
-    
     .portfolio-photo:nth-child(n+9) {
         display: none;
     }
     .tag-field {
         margin-left: 30px;
     }
-
     .portfolio-boxes {
         margin-right: -15px;
     }
@@ -503,7 +538,6 @@ footer {
         padding: 0px 15px 15px 0px;
         width: 45%;
     }
-
     footer {
         display: flex;
         justify-content: center;
@@ -517,11 +551,9 @@ footer {
 }
 
 @media (max-width: 375px) {
-
     section {
         padding: 15px;
     }
-
     .portfolio-photo {
         width: 44%;
         margin-bottom: 0px;
