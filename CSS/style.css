@@ -23,7 +23,7 @@ html {
 
 section {
     border-bottom: 6px solid;
-    padding: 40px;
+    padding: 3%;
 }
 
 h1 {
@@ -108,18 +108,16 @@ header {
     height: 27px;
     width: 16px;
     flex-grow: 1;
+    margin: 283px 40px;
+    transition: 0.3s;
 }
 
 .left {
     background-image: url(../img/arrow-left.svg);
-    margin: 283px 55.5px 284px 40px;
-    transition: 0.3s;
 }
 
 .right {
     background-image: url(../img/arrow-right.svg);
-    margin: 283px 40px 284px;
-    transition: 0.3s;
 }
 
 .left:hover {
@@ -155,7 +153,7 @@ header {
 }
 
 .completly-horizontal {
-    padding-top: 176.5px;
+    padding-top: 176px;
     padding-right: 81px;
     position: relative;
     flex-grow: 3;
@@ -292,6 +290,7 @@ h3 {
 footer {
     height: 76px;
     background: #2D303A;
+    padding: 0 40px;
 }
 
 .copyright {
@@ -358,60 +357,65 @@ footer {
 }
 
 @media (max-width: 1019px) {
+
     .slider {
         height: 447px;
     }
     .left {
-        margin-top: 211.88px;
-        margin-left: 29.42px;
+        margin-top: 211px;
+        margin-left: 29px;
     }
     .right {
-        margin: 211.88px 26.86px 207.05px;
+        margin: 211.88px 26px 207px;
     }
     .phone-vertical {
-        width: 162.36px;
+        width: 162px;
         padding-bottom: 62px;
     }
     .phone-horizontal {
-        width: 344.26px;
+        width: 344px;
     }
     .burger-icon {
         display: none;
     }
     .shadow-vertical {
-        width: 180.71px;
+        width: 180px;
     }
     .display-vertical {
-        width: 141.55px;
+        width: 141px;
         padding: 49px 0px 0px 10px;
     }
     .phone-horizontal {
-        width: 344.26px;
+        width: 344px;
         position: absolute;
     }
     .shadow-horizontal {
-        width: 363.67px;
+        width: 363px;
     }
     .display-horizontal {
-        width: 250.73px;
+        width: 250px;
         padding: 10px 0px 0px 46px;
     }
     .service-block {
         width: 45%;
     }
     .portfolio {
-        padding-bottom: 45.4px;
+        padding-bottom: 45px;
     }
     .portfolio-photo {
         padding-bottom: 15px;
         padding-right: 15px;
         width: 31%;
     }
+    footer {
+        padding: 0 40px;
+    }
+    
 }
 
 @media (max-width: 767px) {
-    /*333*/
-    header {
+
+    .header-line {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
@@ -475,55 +479,54 @@ footer {
     }
     .slider {
         height: 218px;
-        border-bottom-width: 2.21px;
+        border-bottom-width: 2px;
     }
     .opacityBackground {
         opacity: 0.6;
         background: #2D303A;
     }
-    .left {
-        margin: 98.45px 10px 95.03px 10.25px;
+    .arrow {
+        margin: 98px 2%;
     }
-    .right {
-        margin: 98.45px 9.64px;
-    }
+   
     .completely-vertical {
         flex-grow: 2;
-        padding-top: 20.01px;
+        padding-top: 20px;
+        padding-left: 3%;
     }
     .phone-vertical {
-        width: 79.28px;
+        width: 79px;
     }
     .phone-horizontal {
-        width: 168.1px;
+        width: 168px;
     }
     .shadow-vertical {
-        width: 88.24px;
+        width: 88px;
     }
     .display-vertical {
-        width: 69.12px;
+        width: 69px;
         padding: 24px 0px 0px 5px;
     }
     .completly-horizontal {
-        padding-top: 64.97px;
-        padding-left: 26.57px;
+        padding-top: 65px;
+        padding-left: 26px;
     }
     .phone-horizontal {
-        width: 168.1px;
+        width: 168px;
         position: absolute;
     }
     .shadow-horizontal {
-        width: 177.57px;
+        width: 177px;
     }
     .display-horizontal {
-        width: 122.43px;
+        width: 122px;
         padding: 5px 0px 0px 22px;
     }
     .service-block {
         width: 51%;
     }
     h2 {
-        padding-top: 25.6px;
+        padding-top: 25px;
     }
     .portfolio-photo:nth-child(n+9) {
         display: none;
@@ -551,9 +554,7 @@ footer {
 }
 
 @media (max-width: 375px) {
-    section {
-        padding: 15px;
-    }
+
     .portfolio-photo {
         width: 44%;
         margin-bottom: 0px;
