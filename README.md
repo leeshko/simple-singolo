@@ -1,1 +1,1 @@
-# simple-singolo
+https://leeshko.github.io/simple-singolo/
