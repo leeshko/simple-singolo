@@ -59,15 +59,16 @@ tags.forEach(tag => {
         });
         tag.classList.add('tag-active');
         event.preventDefault();
+
+        // ** another way ** 
         // let picture = portfolioPictures.pop();
         // portfolioPictures.unshift(picture);
         // portfolioContainer.innerHTML = portfolioPictures.map(picture => {
         //     return picture.outerHTML;
         // }).join('');
+
         const pictureElement = portfolioContainer.removeChild(document.querySelector('.portfolio-photo'));
         portfolioContainer.appendChild(pictureElement);
-        console.log(portfolioContainer);
-
     });
 });
 
